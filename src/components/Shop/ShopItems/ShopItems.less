@@ -1,0 +1,283 @@
+:local {
+	.products_shop {
+		list-style: none;
+		margin: 0 auto;
+		width: 320px;
+		padding-left: 0;
+	}
+
+	.product_shop {
+		background: #FFF;
+		margin-bottom: 40px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.product_shop br {
+		display: none;
+	}
+
+	.product_shop__link {
+		border-radius: 5px;
+		display: block;
+		height: 248px;
+	}
+
+	.product_shop__link img {
+		border-radius: 5px 0 0 5px;
+		height: 100%;
+		left: 0;
+		margin-left: -145px;
+		position: absolute;
+		top: 0;
+	}
+
+	.product__title_1 {
+		color: #282828;
+		font-size: 1.8rem;
+		left: 165px;
+		position: absolute;
+		top: 15px;
+	}
+
+
+	.product_shop__ingredients {
+		color: #282828;
+		font-size: 15px;
+		left: 165px;
+		position: absolute;
+		top: 68px;
+	}
+
+	.props__shop {
+		background: #FFF;
+		border-radius: 4px;
+		bottom: 20px;
+		color: #282828;
+		font-size: 12px;
+		left: 73px;
+		padding: 2px 4px;
+		position: absolute;
+	}
+
+	.badges__shop {
+		display: none;
+	}
+
+	.shop__empty {
+		color: var(--yellow);
+		padding-bottom: 102px;
+	}
+
+	.product__price_block {
+		bottom: 45px;
+		color: var(--black);
+		left: 165px;
+		position: absolute;
+	}
+
+	.product__price_price {
+		color: var(--yellow);
+		font-size: 1.8rem;
+	}
+
+	.product__price_minus {
+		font-size: 18px;
+		margin: 0 5px;
+	}
+
+	.product__price_count {
+		border: 2px solid var(--black);
+		border-radius: 5px;
+		color: var(--yellow);
+		font-size: 1.9rem;
+		padding: 5px;
+	}
+
+	.product__price_plus {
+		font-size: 1.8rem;
+		margin: 0 5px;
+	}
+
+	.product__price_delete {
+		background: none;
+		bottom: 0;
+		cursor: pointer;
+		height: 30px;
+		left: 165px;
+		line-height: 30px;
+		position: absolute;
+	}
+
+	.product__price_delete:focus, .product__price_delete:active {
+		border: none;
+		outline: none;
+	}
+
+	.product__price_delete::before {
+		background: url("images/delete.png") no-repeat;
+		background-size: contain;
+		content: '';
+		display: inline-block;
+		height: 19px;
+		margin-bottom: -3px;
+		margin-right: 10px;
+		position: relative;
+		width: 20px;
+	}
+
+
+	@media screen and (min-width: 480px){
+		.products_shop {
+			width: 355px;
+		}
+	}
+
+	@media screen and (min-width: 640px){
+		.products_shop {
+			max-width: 1000px;
+			width: 100%;
+		}
+
+		.product_shop {
+			background: rgba(0, 0, 0, 0.7);
+		}
+
+		.product_shop__link {
+			height: 290px;
+		}
+
+		.product_shop__link {
+			height: 248px;
+		}
+
+		.product_shop__link img {
+			border-radius: 5px 0 0 5px;
+			height: 100%;
+			margin: 0;
+			width: auto;
+		}
+
+
+		.props__shop {
+			background: none;
+			color: var(--white);
+			left: 47.8%;
+			font-size: 2rem;
+			top: 50px;
+		}
+
+		.badges__shop {
+			display: block;
+		}
+
+		.product_shop br {
+			display: none;
+		}
+
+		.product__title_1 {
+			color: var(--white);
+			font-size: 2.4rem;
+			left: 310px;
+			position: absolute;
+			top: 20px;
+		}
+
+		.product_shop__type {
+			font-size: 2.4rem;
+		}
+
+		.product_shop__title {
+			color: var(--yellow);
+		}
+
+		.product_shop__ingredients {
+			color: var(--white);
+			display: block;
+			font-size: 1.5rem;
+			left: 48.4%;
+			line-height: 20px;
+			max-width: 445px;
+			text-align: left;
+			top: 34%
+		}
+
+		.product__price_delete {
+			color: var(--white);
+			font-size: 1.5rem;
+			height: 30px;
+			left: unset;
+			right: 9.5%;
+			top: 147px;
+		}
+
+		.product__price_delete::before {
+			bottom: -4px;
+			height: 28px;
+			left: unset;
+			right: -178px;
+			top: unset;
+			width: 29px;
+		}
+
+		.product__price_block {
+			left: 47.6%;
+			top: 80%;
+		}
+
+		.product__price_price {
+			font-size: 2.4rem;
+			margin-right: 15px;
+		}
+
+		.product__price_minus, .product__price_plus {
+			color: var(--white);
+			font-size: 2.6rem;
+		}
+
+		.product__price_count {
+			border-color: var(--white);
+			font-size: 2.4rem;
+			padding: 5px 10px;
+		}
+	}
+
+	@media screen and (min-width: 768px){
+
+		.props__shop {
+			left: 39.9%;
+		}
+
+		.product_shop__ingredients {
+			left: 40.7%;
+		}
+
+		.product__price_block {
+			left: 40.5%;
+		}
+	}
+
+	@media screen and (min-width: 1024px){
+		.props__shop {
+			left: 30.6%;
+		}
+
+		.product_shop__ingredients {
+			font-size: 1.7rem;
+			left: 31%;
+		}
+
+		.product__price_block {
+			left: 31.1%;
+		}
+
+		.product__price_delete {
+			font-size: 1.7rem;
+			right: 8.5%;
+		}
+
+		.product__price_delete::before {
+			right: -196px;
+		}
+	}
+}

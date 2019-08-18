@@ -1,0 +1,312 @@
+:local {
+	.content {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	.footerLogo, .workForYou, .deliveryInCity, .footerOrg, .footerCopy {
+		display: none;
+	}
+
+	.footerPayCards p, .footerMenu, .footerWorktimeAndAddress, .footerAddress p:last-child {
+		padding-top: 16px;
+	}
+
+	.footerPayCards {
+		margin-top: 22px;
+	}
+
+	.footerPayCards p {
+		color: var(--yellow);
+		font-size: 1.6rem;
+		margin-bottom: 19px;
+	}
+
+	.footerPayCards ul {
+		display: flex;
+		font-size: 0;
+		justify-content: center;
+		list-style: none;
+		margin-bottom: 24px;
+		padding-left: 0;
+	}
+
+	.footerPayCards ul li {
+		margin-right: 10px;
+	}
+
+	.footerPayCards ul li:last-child {
+		margin-right: 0;
+	}
+
+	.masterCard__card_1::before, .masterCard__card_2::before, .visa__card_1::before, .visa__card_2::before, .belcart::before, .assist::before {
+		content: '';
+		display: block;
+		height: 30px;
+		width: 38px;
+
+	}
+
+	.masterCard__card_1::before {
+		background: url(images/cards/master1.png) no-repeat;
+		background-size: contain;
+	}
+
+	.masterCard__card_2::before {
+		background: url(images/cards/master2.png) no-repeat;
+		background-size: contain;
+	}
+
+	.visa__card_1::before {
+		background: url(images/cards/visa1.png) no-repeat;
+		background-size: contain;
+	}
+
+	.visa__card_2::before {
+		background: url(images/cards/visa2.png) no-repeat;
+		background-size: contain;
+	}
+
+	.belcart::before {
+		background: url(images/cards/v_belcart.png) no-repeat;
+		background-size: contain;
+	}
+
+	.assist::before {
+		background: url(images/cards/assist.png) no-repeat;
+		background-size: contain;
+	}
+
+	.footerMenu {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.footerMenu li {
+		margin-bottom: 10px;
+	}
+
+	.footerMenu li:last-child {
+		margin-bottom: 20px;
+	}
+
+	.footerMenu li a {
+		font-size: 1.6rem;
+		text-decoration: none;
+		transition: color .3s;
+	}
+	
+	.footerMenu li a:not(.menu__active) {
+		color: var(--white);
+	}
+
+	.footerMenu li a:hover {
+		color: var(--yellow);
+		text-decoration: underline;
+	}
+
+	.menu__active, .footerAddress p:first-child {
+		color: var(--yellow);
+	}
+
+	.footerTime, .footerAddress:last-child {
+		font-size: 1.3rem;
+		margin-bottom: 5px;
+	}
+
+	.footerAddress p:first-child {
+		font-size: 1.6rem;
+		margin-bottom: 20px;
+	}
+
+	.phoneNumber {
+		margin-bottom: 20px;
+	}
+
+	.phoneNumber a {
+		color: var(--yellow);
+		font-size: 1.6rem;
+		text-decoration: none;
+	}
+
+	.phoneNumber a:hover {
+		text-decoration: underline;
+	}
+
+	.phoneNumber span {
+		display: none;
+	}
+
+	.text__bolder {
+		font-weight: 700;
+	}
+
+	@media screen and (min-width: 1024px) {
+		footer {
+			margin-top: 60px;
+		}
+
+		.footerPayCards p, .footerMenu, .footerWorktimeAndAddress, .footerAddress p:last-child {
+			padding-top: 0px;
+		}
+
+		.footerLogo, .workForYou, .deliveryInCity, .footerOrg, .footerCopy {
+			display: block;
+		}
+
+		.footerContent__menu {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+
+		.footerLogo {
+			order: 3;
+		}
+
+		.footerLogoImg {
+			margin-bottom: 10px;
+		}
+
+		.footerLogoSocial {
+			margin-top: 15px;
+		}
+
+		.footerLogoSocial a {
+			margin: 0 6px;
+		}
+
+		.footerPayCards {
+			order: 2;
+		}
+
+		.footerPayCards ul{
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			width: 130px;
+		}
+
+		.footerPayCards {
+			margin-top: 0;
+		}
+
+		.footerPayCards p {
+			color: var(--white);
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		.footerPayCards ul li {
+			margin: 0px 12px 15px 0px;
+		}
+
+		.footerPayCards ul li:last-child {
+			margin-right: 10px;
+		}
+
+		.footerMenu, .footerWorktimeAndAddress, .footerNumber {
+			text-align: left;
+		}
+
+		.footerMenu {
+			list-style: none;
+			order: 1;
+		}
+
+		.footerTime {
+			margin-bottom: 24px;
+		}
+
+		.footerTime, .footerNumber {
+			margin-top: -6px;
+		}
+
+		.footerTime, .footerAddress p:last-child, .phoneNumber, .deliveryInCity {
+			font-size: 1.5rem;
+			line-height: 25px;
+		}
+
+		.footer__orangeText, .footerAddress p:first-child, .phoneNumber a {
+			color: var(--yellow);
+			font-size: 2rem;
+		}
+
+		.footerWorktimeAndAddress {
+			order: 4;
+		}
+
+		.footerAddress p:first-child {
+			margin-bottom: 0;
+		}
+
+		.footerAddress p:last-child {
+			margin-top: 5px;
+		}
+
+		.footerNumber {
+			order: 5;
+		}
+
+		.phoneNumber span {
+			display: block;
+		}
+
+		.deliveryInCity span:first-child {
+			display: block;
+		}
+
+		.footerOrg, .footer-copy {
+			font-size: 1rem;
+		}
+
+		.footerOrg {
+			float: left;
+			line-height: 14px;
+			text-align: left;
+			p {
+				&:first-child {
+					margin-bottom: 0;
+				}
+				&:last-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.footerCopy {
+			float: right;
+		}
+
+		.footerCopy a{
+			color: var(--white);
+			cursor:auto;
+			text-decoration: none;
+		}
+
+		.footerCopy a span {
+			cursor: pointer;
+			transition: color 0.3s;
+		}
+
+		.footerCopy a span:hover {
+			color: var(--yellow);
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

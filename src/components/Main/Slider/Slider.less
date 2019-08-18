@@ -1,0 +1,171 @@
+:local {
+	.content {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	.slider {
+		height: 126px;
+		position: relative;
+	}
+
+	.slider__item {
+		background: #000;
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		img {
+			width: 100%;
+		}
+	}
+
+	.sliderItem__content {
+		left: 1.2rem;
+		position: absolute;
+		right: 1.2rem;
+		top: 1rem;
+		z-index: 1;
+	}
+
+	.sliderItem__title {
+		color: var(--yellow);
+		font-size: 1.5rem;
+		letter-spacing: 1.2px;
+		line-height: 2rem;
+		margin-bottom: 8px;
+		margin-top: 0;
+	}
+
+	.sliderItem__text {
+		color: var(--white);
+		font-size: 1.1rem;
+		letter-spacing: 1.1px;
+		line-height: 1.8rem;
+		margin-bottom: 8px;
+	}
+
+	.sliderItem__link {
+		background: rgba(0, 0, 0, .7);
+		border: 2px solid var(--yellow);
+		border-radius: 5px;
+		color: var(--white);
+		display: inline-block;
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		padding: 0 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: color, background .2s;
+	}
+
+	.dots {
+		display: none;
+	}
+
+	.dot {
+		border: 2px solid var(--yellow);
+		border-radius: 50%;
+		bottom: 78px;
+		cursor: pointer;
+		left: 25px;
+		height: 15px;
+		position: absolute;
+		width: 15px;
+		z-index: 1;
+	}
+
+	.dot_active {
+		background: var(--yellow);
+	}
+
+	@media screen and (min-width: 480px) {
+		.slider {
+			box-sizing: border-box;
+			min-height: 188px;
+		}
+
+		.sliderItem__content {
+			left: 2.4rem;
+			right: 2.4rem;
+			top: 3rem;
+		}
+
+		.sliderItem__title {
+			margin-bottom: 20px;
+		}
+
+		.sliderItem__text {
+			margin-bottom: 20px;
+		}
+
+		.sliderItem__link {
+			line-height: 3.3rem;
+			padding: 0 22px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.slider {
+			height: 301px;
+		}
+
+		.sliderItem__title {
+			font-size: 3rem;
+			line-height: 3rem;
+			margin-bottom: 25px;
+		}
+
+		.sliderItem__text {
+			font-size: 1.8rem;
+			margin-bottom: 30px;
+		}
+
+		.sliderItem__link {
+			line-height: 4.2rem;
+			padding: 0 35px;
+		}
+
+		.dots {
+			bottom: -37px;
+			display: block;
+			position: absolute;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.slider {
+			height: 392.4px;
+		}
+
+		.sliderItem__title {
+			font-size: 4rem;
+			line-height: 4rem;
+			margin-bottom: 30px;
+		}
+
+		.sliderItem__text {
+			font-size: 1.8rem;
+			margin-bottom: 40px;
+		}
+
+		.sliderItem__link {
+			line-height: 5.1rem;
+			padding: 0 45px;
+		}
+	}
+
+	.slider__item {
+		opacity: 0;
+		transition: opacity .7s;
+	}
+	.slider__item_active {
+		opacity: 1;
+		transition: opacity .7s;
+	}
+}
+
+
+

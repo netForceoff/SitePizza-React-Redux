@@ -1,0 +1,143 @@
+:local {
+	.form__phoneOrder, .form__registration {
+		background: var(--white);
+		border-radius: 5px;
+		color: var(--black);
+		margin: 265px auto 0 auto;
+		max-width: 380px;
+		padding: 14px 18px 24px 18px;
+		position: relative;
+	}
+
+	.form__closeForm {
+		text-align: right;
+	}
+
+	.form__closeForm button {
+		background: none;
+		cursor: pointer;
+		font-size: 1.6rem;
+		outline: none;
+	}
+
+	.form__signIn {
+		float: left;
+		font-size: 14px;
+		letter-spacing: 1.3px;
+	}
+
+	.form__closeForm_button {
+		float: right;
+	}
+
+	.form__signIn:hover {
+		border-bottom: 1px solid var(--black);
+	}
+
+	.form__phoneOrder h4, .form__registration h4 {
+		font-size: 1.6rem;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 30px 0px 17px 0px;
+	}
+
+	.form__phoneOrder span, .form__registration span {
+		font-size: 1.3rem;
+	}
+
+	.form__phoneOrder input, .form__registration input {
+		border: 1px solid var(--yellow);
+		border-radius: 5px;
+		display: block;
+		height: 35px;
+		font-size: 1.8rem;
+		margin-top: 5px;
+		padding-left: 10px;
+		width: 96.5%;
+	}
+
+	.form__phoneOrder input {
+		margin-bottom: 19px;
+	}
+
+	.form__importantField {
+		color: red;
+	}
+
+	.confirm__button, .cancel__button, .form__success {
+		border: 2px solid var(--yellow);
+		border-radius: 5px;
+		cursor: pointer;
+		display: block;
+		font-size: 1.6rem;
+		height: 42px;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+		transition: background .3s;
+		width: 100%;
+	}
+
+	.confirm__button, .form__success {
+		background: var(--yellow);
+	}
+
+	.cancel__button {
+		background: var(--white);
+
+	}
+
+	.confirm__button:hover, .form__success:hover {
+		background: var(--white);
+	}
+
+	.cancel__button:hover {
+		background: var(--yellow);
+	}
+
+	.form__registrationText {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 10px;
+		text-align: center;
+		padding: 0 13px;
+	}
+
+	.form__registration input {
+		margin-bottom: 15px;
+	}
+
+	.form__gettingSMS {
+		background: none;
+		cursor: pointer;
+		display: block;
+		font-size: 1.6rem;
+		margin: 0 auto 20px auto;
+		text-decoration: underline;
+	}
+
+	.form__gettingSMS:hover {
+		text-decoration: none;
+	}
+
+	.form__passwordBock {
+		position: relative;
+	}
+
+	.form__showPassword {
+		border-radius: 50%;
+		cursor: pointer;
+		height: 15px;
+		position: absolute;
+		right: 10px;
+		top: 29%;
+		width: 15px;
+	}
+
+	.form__showPassword_green {
+		background: green;
+	}
+
+	.form__showPassword_red {
+		background: red;
+	}
+}

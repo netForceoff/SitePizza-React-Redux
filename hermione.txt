@@ -1,0 +1,2 @@
+npm run hermioneChrome
+selenium-standalone start

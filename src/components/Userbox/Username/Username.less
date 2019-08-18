@@ -1,0 +1,40 @@
+:local {
+	.account {
+		line-height: 42px;
+		padding-right: 5px;
+		width: 30px;
+		button {
+			background: none;
+			border: none;
+			font-size: 0;
+			&::before {
+				background: url("images/account.png") no-repeat;
+				content: '';
+				display: block;
+				height: 18px;
+				width: 17px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.account {
+			order: 3;
+			padding-top: 25px;
+			padding-right: 0;
+			width: 106px;
+			button {
+				color: var(--white);
+				display: block;
+				font-size: 16px;
+				position: relative;
+				text-align: right;
+				&::before {
+					position: absolute;
+					right: 74px;
+					top: calc(50% - 10px);
+				}
+			}
+		}
+	}
+}

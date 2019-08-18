@@ -1,0 +1,69 @@
+:local {
+	.phoneTime {
+		font-size: 11px;
+		line-height: 14px;
+		text-align: center;
+
+		a {
+			color: var(--yellow);
+			font-size: 14px;
+			text-decoration: none;
+		}
+	}
+
+	.callUs, .workForYou {
+		display: none;
+	}
+
+	.text__bolder {
+		font-weight: 700;
+	}
+
+	@media screen and (min-width: 1024px){
+		.phoneTime {
+			display: flex;
+			line-height: 36px;
+			order: 1;
+			div {
+				margin-right: 15px;
+			}
+		}
+
+		.phone {
+			padding-top: 20px;
+			button {
+				background: none;
+				color: var(--white);
+				cursor: pointer;
+				display: flex;
+				font-size: 15px;
+				line-height: 22px;
+				margin-left: 15px;
+				margin-top: 8px;
+				&::before {
+					background: url("images/phone.png") no-repeat;
+					content: '';
+					display: block;
+					height: 20px;
+					margin-right: 15px;
+					width: 17px;
+				}
+			}
+		}
+
+		.phoneTime a, .header__orangeText {
+			color: var(--yellow);
+			font-size: 23px;
+		}
+
+		.time {
+			font-size: 15px;
+			padding-top: 19px;
+		}
+		
+		.workForYou {
+			display: block;
+		}
+	}
+}
+

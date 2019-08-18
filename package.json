@@ -1,0 +1,110 @@
+{
+	"name": "pizza",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm run clear && cross-env NODE_ENV=production webpack --config ./webpack/config.js",
+		"clear": "rm -rf ./dist/*",
+		"dev": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/config.js",
+		"flow": "flow",
+		"hermioneChrome": "hermione --config ./hermione/config.js --browser chrome --html-reporter-path reportsFunctionalTestsChrome",
+		"lint": "./node_modules/.bin/eslint ./src",
+		"test": "jest",
+		"test:watch": "npm run test -- --watch"
+	},
+	"jest": {
+		"moduleDirectories": [
+			"node_modules",
+			"src"
+		],
+		"moduleFileExtensions": [
+			"js",
+			"jsx"
+		],
+		"moduleNameMapper": {
+			"\\.(jpg|jpeg|png|gif)$": "<rootDir>/__mocks__/fileMock.js",
+			"\\.(css|less)$": "identity-obj-proxy"
+		},
+		"testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.jsx?$",
+		"testPathIgnorePatterns": [
+			"(/tests/helpers.*|(\\.|/)(test|spec))\\.jsx?$",
+			"(/tests/functional.*|(\\.|/)(test|spec))\\.jsx?$"
+		],
+		"setupFiles": [
+			"<rootDir>/jest-setup.js"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@gitsd.naumen.ru:krasnoyarov/pizza.git"
+	},
+	"devDependencies": {
+		"autoprefixer": "^8.6.0",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-eslint": "^8.2.3",
+		"babel-jest": "^23.0.1",
+		"babel-loader": "^7.1.4",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-flow": "^6.23.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"chai": "^4.2.0",
+		"chromedriver": "^74.0.0",
+		"classnames": "^2.2.5",
+		"copy-webpack-plugin": "^4.5.1",
+		"cross-env": "^5.1.6",
+		"css-loader": "^0.28.11",
+		"deep-freeze": "0.0.1",
+		"dispatch": "^1.0.2",
+		"enzyme": "^3.3.0",
+		"enzyme-adapter-react-16": "^1.14.0",
+		"eslint": "^4.19.1",
+		"eslint-config-standard": "^11.0.0",
+		"eslint-plugin-flowtype": "^2.49.3",
+		"eslint-plugin-import": "^2.12.0",
+		"eslint-plugin-node": "^6.0.1",
+		"eslint-plugin-promise": "^3.8.0",
+		"eslint-plugin-react": "^7.9.1",
+		"eslint-plugin-standard": "^3.1.0",
+		"fetch-mock": "^6.4.3",
+		"file-loader": "^1.1.11",
+		"flow-bin": "^0.99.1",
+		"flow-typed": "^2.4.0",
+		"geckodriver": "^1.16.2",
+		"hermione": "^2.7.0",
+		"html-reporter": "^4.6.2",
+		"html-webpack-plugin": "^3.2.0",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^23.6.0",
+		"jest-cli": "^23.1.0",
+		"less": "^3.0.4",
+		"less-loader": "^4.1.0",
+		"mini-css-extract-plugin": "^0.4.0",
+		"my-local-ip": "^1.0.0",
+		"normalize.css": "^8.0.1",
+		"postcss-loader": "^2.1.5",
+		"react": "^16.4.0",
+		"react-dom": "^16.4.0",
+		"react-redux": "^5.0.7",
+		"react-test-renderer": "^16.4.0",
+		"redux": "^4.0.1",
+		"redux-logger": "^3.0.6",
+		"redux-mock-store": "^1.5.3",
+		"redux-thunk": "^2.3.0",
+		"selenium-webdriver": "^4.0.0-alpha.1",
+		"style-loader": "^0.21.0",
+		"uglifyjs-webpack-plugin": "^1.2.5",
+		"url-loader": "^1.0.1",
+		"webpack": "^4.11.1",
+		"webpack-cli": "^3.0.2",
+		"webpack-dev-server": "^3.1.4"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"react-router-dom": "^5.0.0"
+	}
+}

@@ -1,0 +1,44 @@
+:local {
+	 .mainMenu__search {
+		 background: #FFF;
+		 border-radius: 5px;
+		 box-sizing: content-box;
+		 margin: 8px 15px 20px 15px;
+	 	 padding: 0 38px 0 10px;
+	 	 position: relative;
+		 input {
+			 border: none;
+			 border-radius: 5px;
+			 font-size: 1.4rem;
+			 padding: 8px 0;
+			 width: 100%;
+		 }
+	 }
+
+	 .mainMenu__searchButton {
+		 border-radius: 0 5px 5px 0;
+		 height: 32px;
+		 overflow: hidden;
+		 position: absolute;
+		 right: 0;
+		 top: 0;
+		 width: 32px;
+		 &::before {
+			 background: url(images/magnifier.png) no-repeat;
+			 content: '';
+			 cursor: pointer;
+			 display: block;
+			 height: 32px;
+			 left: 0;
+			 position: absolute;
+			 top: 0;
+			 width: 32px;
+		 }
+	 }
+
+	@media screen and (min-width: 1024px) {
+		.mainMenu__search {
+			display: block;
+		}
+	}
+}

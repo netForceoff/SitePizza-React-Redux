@@ -1,0 +1,72 @@
+:local {
+	.shop{
+		font-size: 0;
+		margin-right: 15px;
+		a:first-child::before {
+			background: url("images/cart.png") no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 28px;
+			width: 24px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.shop {
+			font-size: 16px;
+			order: 3;
+			a {
+				color: var(--white);
+				display: flex;
+				line-height: 41px;
+				text-decoration: none;
+			}
+
+			a:first-child {
+				line-height: 21px;
+				position: relative;
+				width: 159px;
+			}
+
+			a:first-child::before {
+				height: 38px;
+				margin-right: 20px;
+				width: 34px;
+			}
+			
+			a:last-child {
+				position: relative;
+			}
+
+			 a:last-child::after {
+				 background: url("images/line.png") repeat-x;
+				 bottom: 6px;
+				 content: "";
+				 display: block;
+				 height: 1px;
+				 left: 0px;
+				 position: absolute;
+				 width: 90%;
+			}
+
+			a:last-child:hover::after {
+				height: 0;
+			}
+
+			 a span:first-child {
+				margin-right: 5px;
+			}
+		}
+
+		.orangeText {
+			color: var(--yellow);
+			font-size: 23px;
+		}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Pizza</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fafafa" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="popUp__window hidden"></div>
+  <div class="content">
+    <div class="header__item-logo">
+      <img src="img/logo.png" alt="Наша пицца" />
+    </div>
+    <div class="header__item-phone-time">
+      <div class="phone">
+        <div class="header__item-phoneNumber text__bolder">
+          <a href="tel:(8029)222-22-14">(8029) 222-22-14 </a>
+        </div>
+        <button class="header__item-callUs">Заказать звонок</button>
+      </div>
+      <div class="time">
+        <span class="header__item-workForYou">Работаем для Вас</span> с <span class="header__orange-text text__bolder">10:00</span> до <span class="header__orange-text text__bolder">23:00</span>
+      </div>
+    </div>
+    <div class="header__item-shop-privateAccount">
+      <div class="shop">
+        <a href="shop.html">Корзина пуста</a>
+        <a href="shop.html"><span class="header__orange-text">0 </span> бонусных баллов</a>
+      </div>
+      <div class="privateAccount">
+        <button class="privateAccount_button">
+          Личный кабинет
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="content content_bordered" id="mainMenu">
+    <button class="openMenu js-open">Меню блюд</button>
+    <button class="closeMenu js-close">&times;</button>
+    <ul class="mainMenu js-menu">
+      <li><a href="pizza.html" class="mainMenu__pizza">Пиццы</a></li>
+      <li><a href="#" class="mainMenu__rolls">Роллы</a></li>
+      <li><a href="#" class="mainMenu__snacks">Закуски</a></li>
+      <li><a href="#" class="mainMenu__soup">Супы</a></li>
+      <li><a href="#" class="mainMenu__combo">Комбо обеды</a></li>
+      <li><a href="#" class="mainMenu__deserts">Десерты</a></li>
+      <li><a href="#" class="mainMenu__drinks">Напитки</a></li>
+      <li><a href="#" class="mainMenu__sous">Соусы</a></li>
+    </ul>
+    <div class="mainMenu__search js-search">
+      <input type="text" />
+      <button class="mainMenu__searchButton">Искать</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="content">
+      <div class="slider">
+        <div class="slider__item">
+          <img src="img/slider.jpg" alt="Закажи пиццу" />
+          <div class="slider-item__content">
+            <pre class="slider-item__title">Бонусная программа "Наша пицца":
+Возвращаем 10% от заказа</pre>
+            <div class="slider-item__text">Копи баллы - и заказывай дешевле.</div>
+            <a href="#" class="slider-item__link">Условия</a>
+          </div>
+        </div>
+        <div class="slider__item" >
+          <img src="img/slider2.jpg" alt="Закажи пиццу" />
+          <div class="slider-item__content">
+            <pre class="slider-item__title">Не можешь выбрать
+между двумя пиццами?</pre>
+            <div class="slider-item__text">
+              Просто закажи одну из двух разных половинок!
+            </div>
+            <a class="slider-item__link" href="#">Выбрать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Популярные пиццы</h2>
+    <ul class="products">
+      <li class="product">
+        <a href="" class="product__link">
+          <img src="img/pizza/pizza1.jpg" alt="Пицца с зеленью, томатами, колбасой и сыром" />
+          <span class="product__type">Пицца</span> <span class="product__title">"Чикен-Рэнч"</span>
+        </a>
+        <span class="product__ingredients">
+          сыр моцарелла, пармезан, курица, бекон, томаты, шампиньоны, соус рэнч
+        </span>
+        <ul class="product__badges">
+          <li class="badge badge_best">Хит</li>
+        </ul>
+        <span class="product__props">1305 г / 40 см</span>
+        <button class="product__add">
+          22.90 руб.
+        </button>
+        <br />
+        <button class="product__quick-order">Быстрый заказ</button>
+      </li>
+      <li class="product">
+        <a href="" class="product__link">
+          <img src="img/pizza/pizza2.jpg" alt="Пицца с зеленью, томатами, грибами" />
+          <span class="product__type">Пицца</span> <span class="product__title">"Мясное удовольствие"</span>
+        </a>
+        <span class="product__ingredients">
+          сыр, курица, буженина, говядина, бекон, ветчина, томаты, перец сладкий
+        </span>
+        <ul class="product__badges">
+          <li class="badge badge_best">Хит</li>
+        </ul>
+        <span class="product__props">1305 г / 40 см</span>
+        <button class="product__add">
+          22.90 руб.
+        </button>
+        <br class="br"/>
+        <button class="product__quick-order">Быстрый заказ</button>
+      </li>
+      <li class="product">
+        <a href="" class="product__link">
+          <img src="img/pizza/pizza3.jpg" alt="Пицца с огурцами, сыром, мясом" />
+          <span class="product__type">Пицца</span> <span class="product__title">"Домашняя"</span>
+        </a>
+        <span class="product__ingredients">
+          сыр, буженина, грибы, огурчики, лук фри, соус датский и чесночный
+        </span>
+        <ul class="product__badges">
+          <li class="badge badge_best">Хит</li>
+        </ul>
+        <span class="product__props">1305 г / 40 см</span>
+        <button class="product__add">
+          22.90 руб.
+        </button>
+        <br class="br"/>
+        <button class="product__quick-order">Быстрый заказ</button>
+      </li>
+      <li class="product">
+        <a href="" class="product__link">
+          <img src="img/pizza/pizza4.jpg" alt="Пицца с перцем, оливками, огурцами" />
+          <span class="product__type">Пицца</span> <span class="product__title">"Мексиканская"</span>
+        </a>
+        <span class="product__ingredients">
+          сыр моцарелла, пармезан, говядина, шампиньоны, халапеньо, соус чили
+        </span>
+        <ul class="product__badges">
+          <li class="badge badge_best">Хит</li>
+          <li class="badge badge_forKids">Детская</li>
+        </ul>
+        <span class="product__props">1305 г / 40 см</span>
+        <button class="product__add">
+          22.90 руб.
+        </button>
+        <br class="br"/>
+        <button class="product__quick-order">Быстрый заказ</button>
+      </li>
+      <li class="product">
+        <a href="" class="product__link">
+          <img src="img/pizza/pizza5.jpg" alt="Пицца с ветчиной, сыром и томатами" />
+          <span class="product__type">Пицца</span> <span class="product__title">"Прошутто"</span>
+        </a>
+        <span class="product__ingredients">
+          сыр моцарелла, ветчина, томаты, чесночно сливочный соус
+        </span>
+        <ul class="product__badges">
+          <li class="badge badge_best">Хит</li>
+          <li class="badge badge_forKids">Детская</li>
+        </ul>
+        <span class="product__props">1305 г / 40 см</span>
+        <button class="product__add">
+          22.90 руб.
+        </button>
+        <br class="br"/>
+        <button class="product__quick-order">Быстрый заказ</button>
+      </li>
+      <li class="product">
+        <a href="" class="product__link">
+          <img src="img/pizza/pizza6.jpg" alt="Пицца с томатами, сыром, и с цыпленком" />
+          <span class="product__type">Пицца</span> <span class="product__title">"Цыпленок пармезан"</span>
+        </a>
+        <span class="product__ingredients">
+            сыр моцарелла, чеддер, пармезан, куриное филе, томаты, чесночный соус
+          </span>
+        <ul class="product__badges">
+          <li class="badge badge_best">Хит</li>
+        </ul>
+        <span class="product__props">1305 г / 40 см</span>
+        <button class="product__add">
+          22.90 руб.
+        </button>
+        <br class="br"/>
+        <button class="product__quick-order">Быстрый заказ</button>
+      </li>
+    </ul>
+    <div class="view-all">
+      <a href="#">Смотреть все</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="content">
+      <h2>Популярные роллы</h2>
+      <ul class="products">
+        <li class="product">
+          <a href="" class="product__link">
+            <img src="img/rolls/rol1.jpeg" alt="Роллы с филадельфией и огурцом" />
+            <span class="product__type">Роллы</span> <span class="product__title">"Каой"</span>
+          </a>
+          <span class="product__ingredients">
+              рис, лосось слабосоленый, огурец, сыр филадельфия
+            </span>
+          <ul class="product__badges">
+            <li class="badge badge_best">Хит</li>
+          </ul>
+          <span class="product__props props__roll">200 г.</span>
+          <button class="product__add">
+            8.20 руб.
+          </button>
+          <br class="br"/>
+          <button class="product__quick-order">Быстрый заказ</button>
+        </li>
+        <li class="product">
+          <a href="" class="product__link">
+            <img src="img/rolls/rol2.jpeg" alt="Роллы с лососем и огурцом" />
+            <span class="product__type">Роллы</span> <span class="product__title">"Филадельфия"</span>
+          </a>
+          <span class="product__ingredients">
+              рис, лосось слабосоленый, огурец свежий
+            </span>
+          <ul class="product__badges">
+            <li class="badge badge_best">Хит</li>
+          </ul>
+          <span class="product__props props__roll">270 г.</span>
+          <button class="product__add">
+            12.50 руб.
+          </button>
+          <br class="br"/>
+          <button class="product__quick-order">Быстрый заказ</button>
+        </li>
+        <li class="product">
+          <a href="" class="product__link">
+            <img src="img/rolls/rol3.jpeg" alt="Роллы с угрем копченым, томатом свежим , сыр" />
+            <span class="product__type">Роллы</span> <span class="product__title">"Хот"</span>
+          </a>
+          <span class="product__ingredients">
+             рис, угорь копченый, томат, сыр филадельфия, сухари, лист нори
+            </span>
+          <ul class="product__badges">
+            <li class="badge badge_best">Хит</li>
+          </ul>
+          <span class="product__props props__roll">250 г.</span>
+          <button class="product__add">
+            8.40 руб.
+          </button>
+          <br class="br"/>
+          <button class="product__quick-order">Быстрый заказ</button>
+        </li>
+      </ul>
+      <div class="view-all">
+        <a href="#">Смотреть все</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="content">
+    <div class="footer-content__menu">
+      <div class="footer-logo">
+        <div class="footer-logo-img">
+          <a href=""><img src="img/logo.png" alt="" /></a>
+        </div>
+        <div class="footer-logo-social">
+          <a href="#" target="_blank"><img src="img/instagram.png" alt="Инстаграмм"/></a>
+          <a href="#" target="_blank"><img src="img/vkontakte.png" alt="Вк" /></a>
+        </div>
+      </div>
+      <div class="footer-payCards">
+        <p>Принимаем к оплате</p>
+        <ul>
+          <li class="masterCard__card-1">Master Card</li>
+          <li class="masterCard__card-2">Master Card</li>
+          <li class="visa__card-1">Visa</li>
+          <li class="visa__card-2">Visa</li>
+          <li class="belcart">Belcart</li>
+          <li class="assist">Assist</li>
+        </ul>
+      </div>
+      <ul class="footer-menu">
+        <li><a href="#">Оформление заказа</a></li>
+        <li><a href="#">Оплата и доставка</a></li>
+        <li><a href="#">Бонусная программа</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#" class="menu__active">Связаться с руководством</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer-worktimeAndAddress">
+        <div class="footer-time">
+          <span class="workForYou">Работаем для Вас</span> с <span class="footer__orange-text text__bolder">10:00</span> до <span class="footer__orange-text text__bolder">23:00</span>
+        </div>
+        <div class="footer-address">
+          <p>Пицерия "Наша пицца"</p>
+          <p>г. Брест, ул. Пушкинская 23</p>
+        </div>
+      </div>
+      <div class="footer-number">
+        <div class="phoneNumber text__bolder">
+          <a class="orange-text" href="tel:(8029)222-22-14">(8029) 222-22-14 </a>
+          <span>без выходных</span>
+        </div>
+        <div class="deliveryInCity">
+          <span>Доставка еды в </span><span class="footer__orange-text">Бресте</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-org">
+      <p>ООО "Вкусно и легко", Гос. регистрация от 17.03.2010 УНП: 290949615</p>
+      <p>Администрацией Московского р-на г. Бреста. Зарегестрирован в Торговом реестре РБ 05.02.2018</p>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2011-2019 Наша Пицца. Все права защищены. <a href="">Разработка и продвижение сайта - <span>Adena</span></a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/common.js"></script>
+
+<div id="lbx"></div>
+
+<div>
+  <!-- лайтбокс заказа обратного звонка -->
+  <div class="form__phoneOrder hidden" id = "phoneOrder">
+    <div class="form__closeForm">
+      <button class="form__closeForm_button">&times;</button>
+    </div>
+    <h4>Заказать звонок</h4>
+    <span>Имя </span> <span class="form__importantField">*</span>
+    <input type="text"/>
+    <span>Телефон <span class="form__importantField">*</span></span>
+    <input type="text">
+    <button class="confirm__button">Подтвердить</button>
+    <button class="cancel__button">Отменить</button>
+  </div>
+
+  <!-- лайтбокс авторизации -->
+  <div class="form__registration hidden" id = "registration">
+    <div class="form__closeForm">
+      <button class="form__signIn">Регистрация</button>
+      <button class="form__closeForm_button">&times;</button>
+    </div>
+    <h4 class="form_header">Вход</h4>
+    <div class="form__registrationText hidden">
+      Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация».
+    </div>
+    <span>Номер телефона</span><span class="form__importantField"> *</span>
+    <input type="text" />
+    <button class="form__gettingSMS">Получить код в СМС</button>
+    <span>Пароль или код из смс</span><span class="form__importantField"> *</span>
+    <div class="form__passwordBock">
+      <input type="password" class="form__inputPassword"/> <span class="form__showPassword form__showPassword_green" alt = "Показать пароль"></span>
+    </div>
+
+    <button class="form__success">Войти</button>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  new Menu({id: 'mainMenu'});
+  new FormCallNumber({id: 'phoneOrder'})
+  new FormRegistration({id :'registration'})
+  new Slider({id: 'slider'});
+
+</script>
+
+</body>
+</html>

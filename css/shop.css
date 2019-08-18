@@ -1,0 +1,408 @@
+.products_shop {
+	list-style: none;
+	margin: 0 auto;
+	width: 320px;
+}
+
+.product_shop {
+	background: #FFF;
+	margin-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+.product_shop br {
+	display: none;
+}
+
+.product_shop__link {
+	border-radius: 5px;
+	display: block;
+	height: 248px;
+}
+
+.product_shop__link img {
+	border-radius: 5px 0 0 5px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	margin-left: -145px;
+	top: 0;
+}
+
+.product__title_1 {
+	color: #282828;
+	font-size: 1.8rem;
+	left: 165px;
+	position: absolute;
+	top: 15px;
+}
+
+
+.product_shop__ingredients {
+	color: #282828;
+	font-size: 15px;
+	left: 165px;
+	position: absolute;
+	top: 45px;
+}
+
+.props__shop {
+	background: #FFF;
+	border-radius: 4px;
+	bottom: 20px;
+	color: #282828;
+	font-size: 12px;
+	left: 85px;
+	padding: 2px 4px;
+	position: absolute;
+}
+
+.badges__shop {
+	display: none;
+}
+
+.shop__empty {
+	color: var(--yellow);
+	padding-bottom: 102px;
+}
+
+.product__price_block {
+	color: var(--black);
+	position: absolute;
+	left: 165px;
+	bottom: 45px;
+}
+
+.product__price_price {
+	color: var(--yellow);
+	font-size: 1.8rem;
+}
+
+.product__price_minus {
+	margin: 0 5px;
+	font-size: 18px;
+}
+
+.product__price_count {
+	border: 2px solid var(--black);
+	color: var(--yellow);
+	font-size: 1.9rem;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.product__price_plus {
+	margin: 0 5px;
+	font-size: 1.8rem;
+}
+
+.product__price_delete {
+	background: none;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	height: 30px;
+	line-height: 30px;
+	left: 165px;
+}
+
+.product__price_delete::before {
+	content: '';
+	background: url("../img/delete.png") no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 19px;
+	margin-bottom: -3px;
+	margin-right: 10px;
+	width: 20px;
+	position: relative;
+}
+
+.block_discount {
+	background: var(--white);
+	border-radius: 5px;
+	color: var(--black);
+	text-align: center;
+	padding: 10px 20px 40px 20px;
+}
+
+.block_discount p {
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.block_discount h2:last-of-type {
+	margin-bottom: 10px;
+}
+
+.discount_header {
+	font-size: 2rem;
+	margin-bottom: 13px;
+}
+
+.block_discount span, input {
+	display: block;
+}
+.block_discount input {
+	border: 1px solid var(--yellow);
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #282828;
+	margin: 0 auto 15px auto;
+	padding: 9px 11px;
+	width: 100%;
+}
+
+.block_discount button {
+	background: var(--yellow);
+	border: 1px solid var(--yellow);
+	border-radius: 5px;
+	font-size: 1.6rem;
+	cursor: pointer;
+	width: 100%;
+	padding: 9px 11px;
+	text-transform: uppercase;
+	margin-bottom: 21px;
+	transition: background .3s;
+}
+
+.block_discount button:hover {
+	background: var(--white);
+}
+
+.discount_price {
+	margin-bottom: 4rem;
+}
+
+.discount_price__header {
+	font-size: 1.4rem;
+}
+
+.discount_price__price, .discount_price__delivery {
+	font-size: 2rem;
+	color: var(--yellow);
+	margin: 10px 0;
+}
+
+.discount_price__discount {
+	font-size: 2rem;
+	color: #6da900;
+	margin: 10px 0;
+}
+
+.discount_price__total {
+	font-size: 2rem;
+}
+
+.discount_price__order button:last-child {
+	background: var(--white);
+	transition: background .3s;
+}
+
+.discount_price__order button:last-child:hover {
+	background: var(--yellow);
+}
+
+
+@media screen and (min-width: 480px){
+	.products_shop {
+		width: 355px;
+	}
+}
+
+@media screen and (min-width: 640px){
+	.products_shop {
+		max-width: 1000px;
+		width: 100%;
+	}
+
+	.product_shop {
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+	.product_shop__link {
+		height: 290px;
+	}
+
+	.product_shop__link {
+		height: 248px;
+	}
+
+	.product_shop__link img {
+		border-radius: 5px 0 0 5px;
+		height: 100%;
+		margin: 0;
+		width: auto;
+	}
+
+
+	.props__shop {
+		background: none;
+		color: var(--white);
+		left: 47.8%;
+		font-size: 2rem;
+		top: 50px;
+	}
+
+	.badges__shop {
+		display: block;
+	}
+
+	.product_shop br {
+		display: none;
+	}
+
+	.product__title_1 {
+		position: absolute;
+		top: 20px;
+		left: 310px;
+		font-size: 2.4rem;
+		color: var(--white);
+	}
+
+	.product_shop__type {
+		/*margin-left: 31px;*/
+		font-size: 2.4rem;
+	}
+
+	.product_shop__title {
+		color: var(--yellow);
+	}
+
+	.product_shop__ingredients {
+		display: block;
+		color: var(--white);
+		max-width: 445px;
+		left: 48.4%;
+		line-height: 20px;
+		text-align: left;
+		font-size: 1.5rem;
+		top: 34%
+	}
+
+	.product__price_delete {
+		color: var(--white);
+		font-size: 1.5rem;
+		left: unset;
+		top: 147px;
+		height: 30px;
+		right: 9.5%;
+	}
+
+	.product__price_delete::before {
+		width: 29px;
+		height: 28px;
+		bottom: -4px;
+		top: unset;
+		left: unset;
+		right: -178px;
+	}
+
+	.product__price_block {
+		top: 80%;
+		left: 47.6%;
+	}
+
+	.product__price_price {
+		font-size: 2.4rem;
+		margin-right: 15px;
+	}
+
+	.product__price_minus, .product__price_plus {
+		color: var(--white);
+		font-size: 2.6rem;
+	}
+
+	.product__price_count {
+		font-size: 2.4rem;
+		padding: 5px 10px;
+		border-color: var(--white);
+	}
+}
+
+@media screen and (min-width: 768px){
+
+	.props__shop {
+		left: 39.9%;
+	}
+
+	.product_shop__ingredients {
+		left: 40.7%;
+	}
+
+	.block_discount {
+		padding: 35px 57px 40px 57px;
+		max-width: 886px;
+		margin: 0 auto;
+	}
+
+	.block_discount__items {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.block_discount__authorization {
+		order: 2;
+		width: 446px;
+	}
+
+	.block_discount__authorization_item {
+		display: flex;
+	}
+
+	.block_discount__authorization_item input {
+		margin-right: 20px;
+		height: 38px;
+	}
+
+	.discount_price {
+		text-align: left;
+		order: 1;
+	}
+	
+	.discount_header {
+		text-align: left;
+	}
+
+	.discount_price__order {
+		display: flex;
+		justify-content: center;
+	}
+
+	.discount_price__order button {
+		width: 232px;
+		margin-right: 20px;
+	}
+
+	.product__price_block {
+		left: 40.5%;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+	.props__shop {
+		left: 30.6%;
+	}
+
+	.product_shop__ingredients {
+		font-size: 1.7rem;
+		left: 31%;
+	}
+
+	.product__price_block {
+		left: 31.1%;
+	}
+
+	.product__price_delete {
+		font-size: 1.7rem;
+		right: 8.5%;
+	}
+
+	.product__price_delete::before {
+		right: -196px;
+	}
+}

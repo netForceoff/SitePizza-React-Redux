@@ -1,0 +1,136 @@
+:local {
+	.block_discount {
+		background: var(--white);
+		border-radius: 5px;
+		color: var(--black);
+		text-align: center;
+		padding: 10px 20px 40px 20px;
+	}
+
+	.block_discount p {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+
+	.block_discount h2:last-of-type {
+		margin-bottom: 10px;
+	}
+
+	.discount_header {
+		font-size: 2rem;
+		margin-bottom: 13px;
+	}
+
+	.block_discount span, input {
+		display: block;
+	}
+	.block_discount input {
+		border: 1px solid var(--yellow);
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: #282828;
+		margin: 0 auto 15px auto;
+		padding: 9px 11px;
+		width: 100%;
+	}
+
+	.block_discount button {
+		background: var(--yellow);
+		border: 1px solid var(--yellow);
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.6rem;
+		margin-bottom: 21px;
+		padding: 9px 11px;
+		text-transform: uppercase;
+		transition: background .3s;
+		width: 100%;
+	}
+
+	.block_discount button:hover {
+		background: var(--white);
+	}
+
+	.discount_price {
+		margin-bottom: 4rem;
+	}
+
+	.discount_price__header {
+		font-size: 1.4rem;
+	}
+
+	.discount_price__price, .discount_price__delivery {
+		color: var(--yellow);
+		font-size: 2rem;
+		margin: 10px 0;
+	}
+
+	.discount_price__discount {
+		color: #6da900;
+		font-size: 2rem;
+		margin: 10px 0;
+	}
+
+	.discount_price__total {
+		font-size: 2rem;
+	}
+
+	.discount_price__order button:last-child {
+		background: var(--white);
+		transition: background .3s;
+	}
+
+	.discount_price__order button:last-child:hover {
+		background: var(--yellow);
+	}
+
+
+	@media screen and (min-width: 768px){
+		.block_discount {
+			margin: 0 auto;
+			max-width: 886px;
+			padding: 35px 57px 40px 57px;
+		}
+
+		.block_discount__items {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.block_discount__authorization {
+			order: 2;
+			width: 446px;
+		}
+
+		.block_discount__authorization_item {
+			display: flex;
+		}
+
+		.block_discount__authorization_item input {
+			height: 38px;
+			margin-right: 20px;
+		}
+
+		.discount_price {
+			order: 1;
+			text-align: left;
+		}
+
+		.discount_header {
+			text-align: left;
+		}
+
+		.discount_price__order {
+			display: flex;
+			justify-content: center;
+		}
+
+		.discount_price__order button {
+			margin-right: 20px;
+			width: 232px;
+		}
+
+	}
+}

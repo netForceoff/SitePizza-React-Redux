@@ -1,0 +1,48 @@
+:local {
+	.popUp__window {
+		background: rgba(0,0,0, 0.7);
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 3;
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		margin: 10px auto 0 auto;
+		max-width: 1000px;
+	}
+
+	.logo {
+		margin-left: 10px;
+
+		img {
+			height: 40px;
+			width: 50px;
+		}
+	}
+
+	.callUs,
+	.workForYou {
+		display: none;
+	}
+
+	@media (min-width: 1024px) {
+		.logo {
+			margin-right: 54px;
+			order: 2;
+
+			img {
+				height: 100px;
+				width: 125px;
+			}
+		}
+		.callUs {
+			display: block;
+		}
+	}
+}
+

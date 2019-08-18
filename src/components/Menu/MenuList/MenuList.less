@@ -1,0 +1,222 @@
+:local {
+	.mainMenu {
+		margin: 0;
+		padding: 22px 0 0 0;
+		position: relative;
+		text-align: center;
+		z-index: 0;
+		li {
+			display: inline-block;
+			width: calc(50% - 2px);
+			a {
+				color: var(--white);
+				display: block;
+				font-size: 1.4rem;
+				height: 44px;
+				line-height: 44px;
+				padding-left: 55px;
+				position: relative;
+				text-align: left;
+				text-decoration: none;
+				&:hover {
+					color: var(--yellow);
+				}
+				&::before {
+					background-image: url(images/Untitled4.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					content: "";
+					display: inline-table;
+					height: 26px;
+					left: 15px;
+					margin-top: -15px;
+					position: absolute;
+					top: 50%;
+					vertical-align: middle;
+					width: 42px;
+				}
+			}
+		}
+	}
+
+	.mainMenu__pizza::before {
+	 	background-position: 1px 1px;
+	}
+
+	.mainMenu__pizza:hover::before {
+	 	background-position: -43.5px 0px;
+	}
+
+	.mainMenu__rolls::before {
+	 	background-position: -93px 1px;
+	}
+
+	.mainMenu__rolls:hover::before {
+	 	background-position: -148.5px 1px;
+	}
+
+	.mainMenu__snacks::before {
+	 	background-position: -207.5px 1px;
+	}
+
+	.mainMenu__snacks:hover::before {
+	 	background-position: -256px 1px;
+	}
+
+	.mainMenu__soup::before {
+	 	background-position: -305px 1px;
+	}
+
+	.mainMenu__soup:hover::before {
+	 	background-position: -350.5px 1px;
+	}
+
+	.mainMenu__combo::before {
+	 	background-position: -405.5px 1px;
+	}
+
+	.mainMenu__combo:hover::before {
+	 	background-position: -460px 1px;
+	}
+
+	 .mainMenu__deserts::before {
+	 	background-position: -513.5px 0px;
+	 }
+
+	.mainMenu__deserts:hover::before {
+		background-position: -561px 0px;
+	}
+
+	.mainMenu__drinks::before {
+	 	background-position: -605px 0px;
+	}
+
+	.mainMenu__drinks:hover::before {
+	 	background-position: -648.5px 0px;
+	}
+
+	.mainMenu__sous::before {
+	 	background-position: -686px -0.5px;
+	}
+
+	.mainMenu__sous:hover::before {
+	 	background-position: -723px 0px;
+	}
+
+	@media screen and (min-width: 480px) {
+		.mainMenu {
+			text-align: left;
+			li {
+				width: calc(31% - 2px);
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.mainMenu {
+			text-align: center;
+			li {
+				width: calc(24% - 2px);
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.mainMenu {
+			display: flex;
+			height: 89px;
+			line-height: 125px;
+			list-style: none;
+			padding-top: 15px;
+			li {
+				line-height: 0;
+				padding: 0;
+				a {
+					display: inline;
+					font-size: 1.8rem;
+					padding-left: 0;
+					&::before {
+						display: block;
+						height: 43px;
+						margin: 0 auto;
+						position: initial;
+						transform: none;
+						width: 49px;
+					}
+				}
+			}
+		}
+		.mainMenu__pizza::before {
+			background-position: 1px .5px;
+		}
+
+		.mainMenu__pizza:hover::before {
+			background-position: -73px -.7px;
+		}
+
+		.mainMenu__rolls::before {
+			background-position: -153px 1px;
+		}
+
+		.mainMenu__rolls:hover::before {
+			background-position: -244.5px 1px;
+		}
+
+		.mainMenu__snacks::before {
+			background-position: -340.5px 1px;
+		}
+
+		.mainMenu__snacks:hover::before {
+			background-position: -421px 1px;
+		}
+
+		.mainMenu__soup::before {
+			background-position: -500px 1px;
+		}
+
+		.mainMenu__soup:hover::before {
+			background-position: -575.5px 1px;
+		}
+
+		.mainMenu__combo::before {
+			background-position: -667.5px 1px;
+		}
+
+		.mainMenu__combo:hover::before {
+			background-position: -757px 1px;
+		}
+
+		.mainMenu__deserts::before {
+			background-position: -845.5px 0px;
+		}
+
+		.mainMenu__deserts:hover::before {
+			background-position: -924.5px 0px;
+		}
+
+		.mainMenu__drinks::before {
+			background-position: -999.5px 0px;
+		}
+
+		.mainMenu__drinks:hover::before {
+			background-position: -1071px 0px;
+		}
+
+		.mainMenu__sous::before {
+			background-position: -1135px -0.7px;
+		}
+
+		.mainMenu__sous:hover::before {
+			background-position: -1196.8px 0px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
